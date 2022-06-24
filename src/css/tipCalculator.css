@@ -188,8 +188,8 @@
 
 /* smaill_footer */
 .smaill_footer {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: 110px;
     padding-left: 230px;
     font-family: "Space Mono";
     font-weight: 200;
@@ -211,6 +211,13 @@
     }
     .tipCalculator_content {
         display: block;
+        height: 100%;
+    }
+
+    .smaill_footer {
+        position: relative;
+        top: 110px;
+        padding-left: 120px;
     }
 }
 
@@ -242,9 +249,16 @@
         margin-top: 0px;
     }
 
+    .smaill_footer {
+        position: relative;
+        top: 110px;
+        padding-left: 20px;
+    }
+
     .smaill_footer,
     .smaill_footer > span {
-        font-size: 11px;
+        font-size: 10px;
+        width: 350px;
     }
 
     
