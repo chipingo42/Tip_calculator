@@ -23,10 +23,10 @@
 
 html,
 body {
-    background: var(--background-primary-color);
+    background: var(--background-secondary-color);
     font-family: "Space Mono";
     font-weight: 700;
-    font-size: 0.9rem;
+    height: 100%;
 }
 
 
