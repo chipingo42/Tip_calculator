@@ -188,9 +188,7 @@
 
 /* smaill_footer */
 .smaill_footer {
-    position: absolute;
-    bottom: 0;
-    padding-left: 190px;
+    text-align: center;
     font-family: "Space Mono";
     font-weight: 200;
     font-style: normal;
