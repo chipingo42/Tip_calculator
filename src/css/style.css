@@ -1,0 +1,67 @@
+@import url('./tipCalculator.css');
+@import url('./result_content.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --background-primary-color: #fff;
+    --background-secondary-color: hsla(171, 39%, 76%, 0.474);
+    --background-card-parent-color: #fff;
+    --cards-backgroung-color: hsla(120, 78%, 14%, 0.487);
+    --header--color: hsl(180, 79%, 19%);
+    --input--bill--color: #eaf8f8;
+    --result--content--color:  hsla(183, 100%, 15%);
+    --green-color: hsl(152, 50%, 54%);
+}
+
+
+
+html,
+body {
+    background: var(--background-primary-color);
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 0.9rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+
+.active {
+    background: var(--green-color) !important;
+}
+
+
+/* error */
+.error1 {
+    position: relative;
+    top: -24px;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: none;
+}
+.error {
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-top: 3px;
+    display: none;
+}
+ 
+ 
