@@ -23,7 +23,8 @@
 
 html,
 body {
-    background: var(--background-secondary-color);
+    /* background: var(--background-secondary-color); */
+    background: red;
     font-family: "Space Mono";
     font-weight: 700;
     height: 100%;
