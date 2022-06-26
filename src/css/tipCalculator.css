@@ -1,8 +1,9 @@
-/* #tipCalculator {
+#tipCalculator {
   background: var(--background-secondary-color);
-  height: 100%;
+  height: 100vh;
   width: 100%;
-} */
+  /* padding: 32px 0; */
+}
 
 
 .header {
@@ -65,29 +66,22 @@
 
 
 .inpu_inpu > input {
-   border: none;
-   outline: none;
-   width: 100%;
-   height: 48px;
-   padding-right: 10px;
-   background: var(--input--bill--color);
-   background-position: 17px 15px;
-   text-align: right;
-   font-size: 23px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    padding-right: 10px;
+    background: var(--input--bill--color);
+    text-align: right;
+    font-size: 23px;
+    margin-top: 10px;
    color: hsla(183, 100%, 15%);
 }
 
 
-.tip_card .bill > input::placeholder {
-    font-family: "Space Mono";
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20px;
-}
-
 .dollar {
     position: relative;
-    width: 20%;
+    width: 10%;
     top: -35px;
     left: 7px;
     font-family: "Space Mono";
@@ -133,7 +127,6 @@
    background-color:  hsla(183, 100%, 15%);
    cursor: pointer;
    border-radius: 5px;
-
 }
 
 
@@ -146,13 +139,6 @@
     width: 100%;
     font-size: 18px;
     cursor: pointer;
-}
-
-
-.selectTip_btn input[type=number]::-webkit-inner-spin-button,
-.selectTip_btn input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 
@@ -186,6 +172,15 @@
 }
 
 
+
+.numberOfPeople input[type=number]::-webkit-inner-spin-button,
+.numberOfPeople input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
 /* smaill_footer */
 .smaill_footer {
     padding-top: 90px;
@@ -193,11 +188,11 @@
     font-family: "Space Mono";
     font-weight: 200;
     font-style: normal;
+    letter-spacing: 3px;
 }
 
 .smaill_footer > span {
     color: blue;
-    letter-spacing: 3px;
     font-size: 15px;
 }
 
@@ -212,11 +207,9 @@
         display: block;
         height: 100%;
     }
-
     .smaill_footer {
         position: relative;
-        top: 110px;
-        padding-left: 120px;
+        top: -40px;
     }
 }
 
@@ -225,11 +218,6 @@
     #tipCalculator {
         height: 100%;
     }
-
-    .tipCalculator_content {
-        margin: 0 50px;
-        width: 87%;
-    }
 }
 
 
@@ -237,10 +225,10 @@
 @media screen and (max-width: 500px) {
     .header {
         position: relative;
-        top: 10px;
+        top: -20px;
     }
     .tipCalculator_content {
-        margin: 0 25px;
+        margin-top: -40px;
         height: 100%;
     }
 
@@ -248,14 +236,12 @@
         margin-top: 0px;
     }
 
-    .smaill_footer {
-        position: relative;
-        top: 110px;
-        padding-left: 20px;
-    }
 
     .smaill_footer,
     .smaill_footer > span {
+        height: 0px;
+        margin-top: -30px;
+        /* padding-top: 10px; */
         font-size: 10px;
         width: 350px;
     }
